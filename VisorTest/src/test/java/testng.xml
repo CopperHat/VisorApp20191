@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="VisorSystemSuite" parallel="tests">
+	
+	<test name="MantenientoCategoriaTestFirefox" enabled="true" >
+		<parameter name="navegador" value="firefox" />
+		<parameter name="rutaExcel" value="C:\Data\RegistrarCategoriaData.xlsx" />
+		<parameter name="rutaCapturaPantalla" value="C:\CapturaPantalla\Categoria" />
+		<classes>
+			<class name="pe.com.test.system.testCase.MantenientoCategoriaTest" />
+		</classes>
+	</test>
+	
+	
+
+</suite>
